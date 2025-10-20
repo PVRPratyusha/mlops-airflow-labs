@@ -1,0 +1,82 @@
+
+    ======================================================================
+    COMPLETE WEATHER SYSTEM - FINAL REPORT
+    ======================================================================
+
+    Generated: 2025-10-20 21:30:24
+
+    ======================================================================
+    YOUR CONFIGURATION
+    ======================================================================
+    Selected City: Phoenix
+    Email: pillalamarri.v@northeastern.edu
+
+    Alert Thresholds:
+      - Hot Temperature: >85°F
+      - Cold Temperature: <32°F
+      - Precipitation: >0.1 in
+      - Wind: >20 mph
+      - Humidity: >90%
+
+    ======================================================================
+    CURRENT WEATHER: Phoenix
+    ======================================================================
+    Temperature: 87.1°F
+    Humidity: 19%
+    Wind Speed: 3.9 mph
+    Precipitation: 0.00 inches
+
+    ======================================================================
+    ALERT STATUS
+    ======================================================================
+    Alert Level: WARNING
+    Active Alerts: 1
+
+    
+Alert Details:
+1. 🔥 HIGH TEMP: 87.1°F (threshold: 85°F)
+
+
+    ======================================================================
+    FILES GENERATED
+    ======================================================================
+    Visualizations (6 total):
+      1. Temperature by City (your city highlighted)
+      2. Feature Correlation Heatmap
+      3. Your City Temperature Trend (7 days)
+      4. Temperature Distribution (all cities)
+      5. Hourly Weather Patterns
+      6. Top 10 Warmest Cities Comparison
+
+    Data Files:
+      - weather_all_cities.csv (20 cities raw data)
+      - weather_processed.csv (cleaned & engineered features)
+
+    Model Files:
+      - weather_model.pkl (Random Forest model)
+
+    Alert Files:
+      - alert_status.json (alert decisions)
+      - email_content.html (formatted email)
+      - email_content.txt (plain text version)
+
+    ======================================================================
+    AVAILABLE CITIES
+    ======================================================================
+    You can change your city in the code to any of these:
+    Atlanta, Austin, Boston, Chicago, Dallas, Denver, Detroit, Houston,
+    Los Angeles, Miami, Minneapolis, New Orleans, New York, Philadelphia,
+    Phoenix, Portland, San Diego, San Francisco, Seattle, St. Louis
+
+    Simply update USER_CONFIG['selected_city'] at the top of the file.
+
+    ======================================================================
+    SYSTEM STATUS
+    ======================================================================
+    Status: OPERATIONAL
+    Last Run: 2025-10-20 21:30:24
+    Alert System: ACTIVE
+    Email Generation: SUCCESS
+
+    ======================================================================
+    

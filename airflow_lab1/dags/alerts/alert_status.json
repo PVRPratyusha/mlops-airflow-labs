@@ -1,0 +1,16 @@
+{
+  "alert_level": "WARNING",
+  "alerts": [
+    "\ud83d\udd25 HIGH TEMP: 87.1\u00b0F (threshold: 85\u00b0F)"
+  ],
+  "should_send_email": true,
+  "city": "Phoenix",
+  "conditions": {
+    "city": "Phoenix",
+    "temperature": 87.1,
+    "humidity": 19,
+    "wind_speed": 3.9,
+    "precipitation": 0.0
+  },
+  "timestamp": "2025-10-20T21:30:23.146851"
+}

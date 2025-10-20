@@ -1,0 +1,30 @@
+
+    ======================================================================
+    WEATHER ALERT: Phoenix
+    ======================================================================
+
+    Alert Level: WARNING
+    Generated: 2025-10-20 21:30:24
+
+    CURRENT CONDITIONS:
+    ------------------
+    Temperature:   87.1°F
+    Humidity:      19%
+    Wind Speed:    3.9 mph
+    Precipitation: 0.00 inches
+
+    
+    ACTIVE ALERTS (1):
+    ----------------------------------------------------------------------
+    1. HIGH TEMP: 87.1°F (threshold: 85°F)
+
+    RECOMMENDED ACTIONS:
+    ----------------------------------------------------------------------
+    - Stay hydrated and limit outdoor activities
+- Check on elderly neighbors and pets
+
+
+    ======================================================================
+    Weather Prediction System | Phoenix
+    ======================================================================
+    

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Alert - Phoenix</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+                background-color: #f5f5f5;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 600px;
+                margin: 20px auto;
+                background-color: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+
+            .header {
+                background: linear-gradient(135deg, #dc3545 0%, #dc3545dd 100%);
+                color: white;
+                padding: 40px 30px;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+
+            .header .level {
+                font-size: 20px;
+                font-weight: 500;
+                opacity: 0.95;
+            }
+
+            .content {
+                padding: 30px;
+            }
+
+            .section-title {
+                font-size: 20px;
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #dc3545;
+            }
+
+            .conditions-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                margin: 20px 0;
+            }
+
+            .condition-card {
+                background-color: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+                border-left: 4px solid #dc3545;
+            }
+
+            .condition-label {
+                font-size: 12px;
+                color: #666;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 5px;
+            }
+
+            .condition-value {
+                font-size: 24px;
+                font-weight: 700;
+                color: #333;
+            }
+
+            .alert-box {
+                background-color: #f5c6cb;
+                border-left: 5px solid #dc3545;
+                padding: 20px;
+                margin: 15px 0;
+                border-radius: 5px;
+            }
+
+            .alert-box strong {
+                color: #721c24;
+                font-size: 16px;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .no-alerts {
+                background-color: #d4edda;
+                color: #155724;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 16px;
+                margin: 20px 0;
+            }
+
+            .recommendations {
+                background-color: #fff3cd;
+                border-left: 4px solid #ffc107;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 5px;
+            }
+
+            .recommendations h3 {
+                color: #856404;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+
+            .recommendations ul {
+                margin-left: 20px;
+                color: #856404;
+            }
+
+            .recommendations li {
+                margin: 8px 0;
+            }
+
+            .footer {
+                background-color: #f8f9fa;
+                padding: 25px;
+                text-align: center;
+                color: #666;
+                font-size: 13px;
+                border-top: 1px solid #e0e0e0;
+            }
+
+            .footer p {
+                margin: 5px 0;
+            }
+
+            .badge {
+                display: inline-block;
+                padding: 5px 12px;
+                background-color: #dc3545;
+                color: white;
+                border-radius: 20px;
+                font-size: 14px;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <h1>Weather Alert: Phoenix</h1>
+                <div class="level">WARNING Level</div>
+                <div class="badge">Automated Weather Monitoring</div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <h2 class="section-title">Current Conditions</h2>
+
+                <div class="conditions-grid">
+                    <div class="condition-card">
+                        <div class="condition-label">Temperature</div>
+                        <div class="condition-value">87.1°F</div>
+                    </div>
+
+                    <div class="condition-card">
+                        <div class="condition-label">Humidity</div>
+                        <div class="condition-value">19%</div>
+                    </div>
+
+                    <div class="condition-card">
+                        <div class="condition-label">Wind Speed</div>
+                        <div class="condition-value">3.9 mph</div>
+                    </div>
+
+                    <div class="condition-card">
+                        <div class="condition-label">Precipitation</div>
+                        <div class="condition-value">0.00 in</div>
+                    </div>
+                </div>
+        
+                <h2 class="section-title">Active Alerts</h2>
+            <div class="alert-box"><strong>HIGH TEMP: 87.1°F (threshold: 85°F)</strong></div>
+
+                <div class="recommendations">
+                    <h3>Recommended Actions:</h3>
+                    <ul>
+            
+                        <li><strong>Stay Hydrated:</strong> Drink plenty of water throughout the day</li>
+                        <li><strong>Limit Outdoor Activity:</strong> Avoid strenuous exercise during peak heat</li>
+                        <li><strong>Check on Others:</strong> Elderly neighbors and pets are at higher risk</li>
+                        <li><strong>Stay Cool:</strong> Use air conditioning or visit cooling centers</li>
+                
+                    </ul>
+                </div>
+            
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p><strong>Airflow Weather Prediction System</strong></p>
+                <p>Report Generated: Monday, October 20, 2025 at 09:30 PM</p>
+                <p>Location: Phoenix | Temperature: 87.1°F</p>
+                <p style="margin-top: 15px; font-size: 11px;">
+                    This is an automated alert from your weather monitoring system.<br>
+                    To view detailed visualizations, check: dags/visualizations/
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+    
