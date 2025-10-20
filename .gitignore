@@ -182,9 +182,9 @@ cython_debug/
 .abstra/
 
 # Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  and can be added to the global gitignore or merged into this file. However, if you prefer,
 #  you could uncomment the following to ignore the entire vscode folder
 # .vscode/
 
@@ -205,3 +205,51 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================
+# Airflow Lab Files
+# ============================================
+
+# Airflow runtime directories
+airflow_lab1/logs/
+airflow_lab1/plugins/
+airflow_lab1/config/
+
+# Airflow models and artifacts
+airflow_lab1/dags/model/*.sav
+airflow_lab1/dags/model/*.pkl
+
+# Docker volumes
+postgres-db-volume/
+```
+
+4. **Save** (Cmd+S)
+
+---
+
+## 📝 **Your `.gitignore` Structure:**
+```
+[All the existing Python stuff from GitHub]
+...
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# ============================================  ← ADD FROM HERE
+# Airflow Lab Files
+# ============================================
+
+# Airflow runtime directories
+airflow_lab1/logs/
+airflow_lab1/plugins/
+airflow_lab1/config/
+
+# Airflow models and artifacts
+airflow_lab1/dags/model/*.sav
+airflow_lab1/dags/model/*.pkl
+
+# Docker volumes
+postgres-db-volume/
